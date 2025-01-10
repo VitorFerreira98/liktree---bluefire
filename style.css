@@ -25,8 +25,7 @@ body {
 .pageTop img {
     width: 400px;
     margin-bottom: 3rem;
-    transition: .5s;
-    
+    transition: .5s; 
 }
 
 .pageTop img:hover {
@@ -106,3 +105,67 @@ footer a:hover {
     font-size: 18px;
 }
 
+@media screen and (max-width: 990px){
+    .pageTop img {
+        width: 200px;
+        margin-bottom: 1.5rem;
+        transition: .3s; 
+    }
+
+    .pageTop img:hover {
+        width: 250px;
+    }
+
+    .card-body {
+        min-height: 3vh;
+    }
+
+    .card img {
+        width: 350px;
+        border-radius: 80%;
+        border-color: transparent;
+    }
+
+    .pageCards {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card-body, .card-text{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .pageCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card img {
+        width: 350px;
+        height: 300px;
+        border-radius: 100%;
+        border-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .card-body, .card-text{
+        display: flex;
+        flex-direction: column;
+    }
+}
